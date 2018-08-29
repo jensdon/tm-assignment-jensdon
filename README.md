@@ -1,2 +1,2 @@
-# turing-machine-assignment
-Program a Turing Machine
+# Turing Machine Assignment
+Program a Turing Machine.
