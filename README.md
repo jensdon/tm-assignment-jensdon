@@ -37,7 +37,7 @@ Below is an example of a transition table.
 
 If a combination of a state and a symbol is not present in the table, the machine halts.
 
-## Assignment
+## Programming
 In this assignment you are going to [program a Turing Machine][program]. The Turing Machine accepts a JSON file. Below you can find the above transition table translated into a loadable JSON file.
 
 ```json
@@ -68,6 +68,17 @@ The other button is labelled `>>`. When pressed the machine will automatically s
 
 You can paste a JSON program into the textarea. The `load` button loads the program in the Turing machine. An other option is to select a JSON program file, which then get loaded automatically.
 
+## Assignment
+Take your pick of the problems below and write a Turing Machine program for it.
+
+### Problems
+#### Binary Successor
+> Given a number `n` written down in [binary][], determine the binary representation of the successor, i.e. the binary representation of `n+`.
+
+##### Example
+37 is `10101` in binary. The succcessor of 37 is 38, which is `10110` in binary.
+
 [turing]: https://en.wikipedia.org/wiki/Alan_Turing
 [machine]: https://en.wikipedia.org/wiki/Turing_machine
 [program]: http://fifth-postulate.nl/turing-machine/
+[binary]: https://en.wikipedia.org/wiki/Binary_number
