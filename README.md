@@ -11,6 +11,7 @@ Turing formalised important concepts such as algorithm and computation by introd
 
 ## Short Introduction
 ![A detail of a Turing Machine](http://fifth-postulate.nl/turing-machine/image/tm_detail.png)
+
 A turing machine can be thought of as a machine with
 
 1. An infinite _tape_ which can be read from and written to.
@@ -40,6 +41,7 @@ If a combination of a state and a symbol is not present in the table, the machin
 
 ## Programming
 ![The complete Turing Machine](http://fifth-postulate.nl/turing-machine/image/tm.png)
+
 In this assignment you are going to [program a Turing Machine][program]. The Turing Machine accepts a JSON file. Below you can find the above transition table translated into a loadable JSON file.
 
 ```json
@@ -92,8 +94,15 @@ In `10101` there are 3 `1`s. 3 is an *odd* number so the parity of the number of
 ##### Example
 When the string `ABBA` is found on the tape, the *copy* program would leave the tape as `ABBA_ABBA` when the program finishes.
 
+#### Palindrome
+> Determine if a string of `A` and `B`s is a [*palindrome*][palindrome].
+
+##### Example
+`ABBA` is a palindrome, `ABAB` is not a palindrome.
+
 [turing]: https://en.wikipedia.org/wiki/Alan_Turing
 [machine]: https://en.wikipedia.org/wiki/Turing_machine
 [program]: http://fifth-postulate.nl/turing-machine/
 [binary]: https://en.wikipedia.org/wiki/Binary_number
 [parity]: https://en.wikipedia.org/wiki/Parity_(mathematics)
+[palindrome]: https://en.wikipedia.org/wiki/Palindrome
