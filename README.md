@@ -80,7 +80,14 @@ Take your pick of the problems below and write a Turing Machine program for it.
 ##### Example
 37 is `10101` in binary. The succcessor of 37 is 38, which is `10110` in binary.
 
+#### Parity of Ones
+> Given a [binary][] number, e.g. `10101` for 37, determine the [*parity*][parity] of the number of ones in the representation.
+
+##### Example
+In `10101` there are 3 `1`s. 3 is an *odd* number so the parity of the number of `1`s in `10101` is *`1`*. If the number of `1`s would be *even* the parity should be `0`.
+
 [turing]: https://en.wikipedia.org/wiki/Alan_Turing
 [machine]: https://en.wikipedia.org/wiki/Turing_machine
 [program]: http://fifth-postulate.nl/turing-machine/
 [binary]: https://en.wikipedia.org/wiki/Binary_number
+[parity]: https://en.wikipedia.org/wiki/Parity_(mathematics)
