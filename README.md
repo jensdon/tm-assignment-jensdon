@@ -10,6 +10,7 @@ Program a Turing Machine.
 Turing formalised important concepts such as algorithm and computation by introducing the concept now known as a [Turing machine][machine].
 
 ## Short Introduction
+![A detail of a Turing Machine](http://fifth-postulate.nl/turing-machine/image/tm_detail.png)
 A turing machine can be thought of as a machine with
 
 1. An infinite _tape_ which can be read from and written to.
@@ -38,6 +39,7 @@ Below is an example of a transition table.
 If a combination of a state and a symbol is not present in the table, the machine halts.
 
 ## Programming
+![The complete Turing Machine](http://fifth-postulate.nl/turing-machine/image/tm.png)
 In this assignment you are going to [program a Turing Machine][program]. The Turing Machine accepts a JSON file. Below you can find the above transition table translated into a loadable JSON file.
 
 ```json
