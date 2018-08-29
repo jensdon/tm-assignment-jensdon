@@ -86,6 +86,12 @@ Take your pick of the problems below and write a Turing Machine program for it.
 ##### Example
 In `10101` there are 3 `1`s. 3 is an *odd* number so the parity of the number of `1`s in `10101` is *`1`*. If the number of `1`s would be *even* the parity should be `0`.
 
+#### Copy
+> Copy a given string of `A` and `B`
+
+##### Example
+When the string `ABBA` is found on the tape, the *copy* program would leave the tape as `ABBA_ABBA` when the program finishes.
+
 [turing]: https://en.wikipedia.org/wiki/Alan_Turing
 [machine]: https://en.wikipedia.org/wiki/Turing_machine
 [program]: http://fifth-postulate.nl/turing-machine/
