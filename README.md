@@ -37,5 +37,37 @@ Below is an example of a transition table.
 
 If a combination of a state and a symbol is not present in the table, the machine halts.
 
+## Assignment
+In this assignment you are going to [program a Turing Machine][program]. The Turing Machine accepts a JSON file. Below you can find the above transition table translated into a loadable JSON file.
+
+```json
+{
+  "tm": {
+    "tape": {
+      "left": [],
+      "current": "A",
+      "right": ["A", "A", "A"]
+    },
+    "state": 0,
+    "transitions": [
+      { "current": [0, "A"], "next": [0, "A", "R"] },
+      { "current": [0, "B"], "next": [1, "B", "R"] },
+      { "current": [1, "_"], "next": [2, "B", "L"] },
+      { "current": [2, "A"], "next": [2, "A", "L"] },
+      { "current": [2, "_"], "next": [3, "_", "R"] }
+    ]
+  },
+  "blank": "_",
+  "visible_tape": 5,
+  "running": false
+}
+```
+
+There are two buttons on the Turing Machine. One button labelled `>`. This allows one to step through the operation of the machine.
+The other button is labelled `>>`. When pressed the machine will automatically step through the its program. Pressing it again will pauze the machine.
+
+You can paste a JSON program into the textarea. The `load` button loads the program in the Turing machine. An other option is to select a JSON program file, which then get loaded automatically.
+
 [turing]: https://en.wikipedia.org/wiki/Alan_Turing
 [machine]: https://en.wikipedia.org/wiki/Turing_machine
+[program]: http://fifth-postulate.nl/turing-machine/
