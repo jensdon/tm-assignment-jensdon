@@ -1,9 +1,34 @@
 public class TuringMachine {
 
-    public TuringMachine(String tape){
+    boolean state;
 
-            System.out.println("Passed Name is :"+tape);
+    public TuringMachine(){
+
     }
+
+    public boolean Run(String tape){
+
+
+
+        char[] chars = tape.toCharArray();
+
+        for (char c : chars) {
+            System.out.println(c);
+        }
+
+        
+        return true;
+
+    }
+
+    public void setState( boolean stateMachine ) {
+        state = stateMachine;
+    }
+
+    public boolean getState(boolean state) {
+        return state;
+    }
+
 }
 
 
